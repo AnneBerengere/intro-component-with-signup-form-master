@@ -25,8 +25,6 @@ body {
 .interactive_container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .button_trytrial {
@@ -38,8 +36,6 @@ body {
     color: hsl(246, 25%, 77%);
     border-radius: 0.6em;
     font-weight: 400;
-    font-size: 0.7em;
-    margin-bottom: 1.5em;
     box-shadow: 0 0.5em 0 0 #D26977;
 }
 
@@ -54,22 +50,20 @@ body {
     background-color: white;
     color: hsl(246, 25%, 77%);
     text-align: center;
+    font-weight: 400;
     box-shadow: 0 0.8em 0 0 #D26977;
 }
 
 .input>input {
     background-color: transparent;
-    width: 28.5em;
     border-radius: 0.4em;
-    padding: 1.3em 2em;
     font-size: 1.3em;
     font-weight: 700;
     outline: none;
-    margin: 1.5em 2.8em 0 2.8em;
 }
 
 .noverified {
-    border: 0.1em solid hsl(246, 25%, 77%);
+    border: 0.1em solid hsl(0, 0%, 77%);
 }
 
 .error {
@@ -105,7 +99,6 @@ body {
     font-size: 1.2em;
     text-align: right;
     padding-top: 0.4em;
-    padding-right: 3em;
 }
 
 .button_claim {
@@ -119,6 +112,7 @@ body {
     letter-spacing: 0.1em;
     min-height: 4em;
     border-radius: 0.5em;
+    box-shadow: 0 0.2em 0 0 #31B87D;
 }
 
 .button_claim:hover {
@@ -178,12 +172,19 @@ body {
     .formulaire_container {
         min-width: 100%;
         max-width: 100%;
-        padding: 1.8em 0em 4em 0em;
+        padding: 1.8em 0 4em 0;
         border-radius: 0.5em;
         font-size: 0.47em;
-        font-weight: 600;
-        color: hsl(246, 25%, 77%);
-        position: relative;
+    }
+
+    .input>input {
+        width: 28.5em;
+        padding: 1.3em 2em;
+        margin: 1.5em 2.8em 0 2.8em;
+    }
+
+    .text_error {
+        padding-right: 3em;
     }
 
     .button_claim {
@@ -202,8 +203,6 @@ body {
         min-width: 23.4em;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
         padding: 5.7em 0 4.1em 0;
         background-image: url("images/bg-intro-mobile.png");
         background-color: hsl(0, 100%, 74%);
@@ -244,32 +243,32 @@ body {
     .formulaire_container {
         min-width: 27.4em;
         max-width: 27.4em;
-        padding: 2.3em 2em;
+        padding: 0.8em 2em;
         border-radius: 0.7em;
         font-size: 0.65em;
-        font-weight: 400;
-        color: hsl(246, 25%, 77%);
     }
 
     .input>input {
         width: 17.9em;
-        border-radius: 0.4em;
         padding: 1.3em 1.3em;
-        font-size: 1.3em;
-        font-weight: 700;
-        outline: none;
-        border: 0.1em solid hsl(246, 25%, 77%);
-        margin: 0 0 1.5em 0;
+        margin: 1.2em 0 0 0;
+    }
+
+    .text_error {
+        padding-right: 0;
     }
 
     .button_claim {
         font-size: 1.35em;
         font-weight: 500;
-        margin: 0 0.2em 1em 0.2em;
+        margin: 1.2em 0.2em 1em 0.2em;
     }
 
     .text_TermsandServices {
+        text-align: center;
         line-height: 2em;
         padding: 0 2.5em;
+        margin-bottom: 1.5em;
     }
+
 }
